@@ -1,5 +1,5 @@
 # NBA-database #
-Scraps data from numerous sites to show information about teams, scores, schedules and league stats in the National Basketball Association. Written in a script-type of way
+Scraps data from numerous sites to show information about teams, scores, schedules and league stats in the National Basketball Association. Written in a script-type of way.
 
 ## Feautures##
 Live team statistics taken from-->"scorecenter.espn.go.com"
