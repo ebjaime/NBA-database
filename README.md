@@ -4,7 +4,7 @@ Scraps data from numerous sites to show information about teams, scores, schedul
 ## Feautures##
 Live team statistics taken from-->"scorecenter.espn.go.com"
 
-Live roster rotation taken from-->"basketball.realgm.com"
+Live roster rotation taken from-->"cbssport.com"
 
 Shedules form  ----------------> "si.com"
 
