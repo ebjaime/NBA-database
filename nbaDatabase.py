@@ -320,7 +320,7 @@ elif len(sys.argv)>=2:
             printScores(date)
     elif sys.argv[1]=="-sc" or sys.argv[1]=="--schedule":
         if len(sys.argv)<3:
-            print("Insert date in YEAR-MONTH-DAY format")
+            print("Insert date in YEAR-MONTH-DAY format or insert 'today'")
         elif sys.argv[2]=="today":
             today=time.strftime("%Y-%m-%d")
             printSchedule(today)
