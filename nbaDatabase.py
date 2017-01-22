@@ -254,11 +254,21 @@ def printScores(date):
         score1=div.findAll("td")[len(div.findAll("td"))/2-1].text.strip()
         score2=div.findAll("td")[len(div.findAll("td"))-1].text.strip()
 
+        
         player1=soup_scores.findAll("div",{"class":"team-player-stats"})[countter].findAll("td")[1].text.strip()
         player2=soup_scores.findAll("div",{"class":"team-player-stats"})[countter].findAll("td")[3].text.strip()
-        print(team1.upper()+" "+score1+" - "+score2+" "+team2.upper())
+
+        try:
+            score1=int(score1)
+            score2=int(score2)
+        except ValueError:
+            score1=""
+            score2=""
+
+        print(team1.upper()+" "+str(score1)+" - "+str(score2)+" "+team2.upper())
         print(player1.split("\n")[0]+" ("+player1.split("\n")[1]+") "+player1.split("\n")[2])
         print(player2.split("\n")[0]+" ("+player2.split("\n")[1]+") "+player2.split("\n")[2]+"\n")
+
         countter=countter+1
 
 def searchPlayers(player):
